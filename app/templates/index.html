@@ -10,21 +10,37 @@
 <!-- Content block -->
 {% block content %}
 
-<!-- Popular movie -->
-<h3> Popular Movies</h3>
-<ul>
-    {{ macro.displayMovieList(popular)}}
-</ul>
-<!-- Upcoming movie  -->
-<h3> Upcoming Movies </h3>
-<ul>
-    {{ macro.displayMovieList(upcoming)}}
-</ul>
-<!-- Now showing movie -->
-<h3>Now Showing</h3>
-<ul>
-    {{ macro.displayMovieList(now_showing)}}
-</ul>
+<div class="container">
+    
+    <div class="row" style="margin-bottom: 5%;">
+        <form>
+            <div class="col-md-8">
+                <input type="text" name="movie_query" placeholder="Search for a Movie" class="form-control">
+            </div>
+            <div class="col-md-4">
+                <input type="submit"  value="Search" class="btn btn-danger">
+            </div>
+        </form>
+    </div>
 
+<!-- Popular movie -->
+<div class="row">
+    <h2 style="margin-top: .5%;"> Popular Movies</h2>
+    {{ macro.displayMovieList(popular)}}
+</div>
+    
+<!-- Upcoming movie  -->
+<div class="row">
+    <h2 style="margin-top: 5%;"> Upcoming Movies</h2>
+    {{ macro.displayMovieList(upcoming)}}
+</div>
+
+<!-- Now showing movie -->
+<div class="row">
+    <h2 style="margin-top: 5%;"> Now Showing</h2>
+    {{ macro.displayMovieList(now_showing)}}
+</div>
+
+</div>
 
 {% endblock%}
