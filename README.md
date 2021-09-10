@@ -41,4 +41,4 @@ Screenshots
 
 Your app will look something like this:
 
-![alt text](https://github.com/otsembo/WatchList/blob/master/image.jpg?raw=true)
+![alt text](https://github.com/otsembo/WatchList/blob/master/screenshot_1.png?raw=true)
