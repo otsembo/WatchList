@@ -22,15 +22,15 @@ After cloning the project, you need to set it up:
 
 - Set up virtual environment in your project directory
 
-    $python -m venv virtual
+        $python -m venv virtual
 
 - Activate the environment
 
-    $source virtual/bin/activate
+        $source virtual/bin/activate
 
 - Once activated you need to reinstall the project dependencies
 
-    $pip install - requirements.txt
+        $pip install - requirements.txt
 
 - Next you need to locate your api key from <a href="https://www.themoviedb.org/documentation/api">The Movie DB</a>
 
