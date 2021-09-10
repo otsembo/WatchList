@@ -14,7 +14,7 @@ Installation
 
 To install the project, you need to clone the application to your local machine.
 
-- On your git cli run the following command:
+On your git cli run the following command:
 
     git clone https://github.com/otsembo/WatchList.git
 
