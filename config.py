@@ -7,6 +7,7 @@ class Config:
     MOVIE_API_BASE_URL = 'https://api.themoviedb.org/3/movie/{}?api_key={}'
     MOVIE_API_KEY = os.environ.get('MOVIE_API_KEY')
     SECRET_KEY = os.urandom(64)
+    SQLACHEMY_DATABASE_URI = 'postgresql+psycopg2;//afrigamez;Otsembo.123@localhost/watchlist'
     pass
 
 
