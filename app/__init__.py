@@ -3,28 +3,29 @@ from flask import Flask
 from flask_bootstrap import Bootstrap
 from flask_sqlalchemy import SQLAlchemy
 
-#initializing extensions
+# initializing extensions
 bootstrap = Bootstrap()
 db = SQLAlchemy()
 
+
 def create_app(config_name):
-    #initialize the application
+    # initialize the application
     app = Flask(__name__)
-    #set up configurations
+    # set up configurations
     app.config.from_object(config_options[config_name])
-    #initializing extensions
+    # initializing extensions
     bootstrap.init_app(app)
     db.init_app(app)
 
-    #Register blueprint
+    # Register blueprint
     from .main import main as main_blueprint
     app.register_blueprint(main_blueprint)
 
-     # setting config
+    # setting config
     from .request import configure_request
     configure_request(app)
 
     return app
-    
-#from app import views
-#from app import error
+
+# from app import views
+# from app import error

@@ -1,5 +1,6 @@
 import os
 
+
 class Config:
     '''
     General configuration parent class
@@ -9,7 +10,6 @@ class Config:
     SECRET_KEY = os.urandom(64)
     SQLACHEMY_DATABASE_URI = 'postgresql+psycopg2;//afrigamez;Otsembo.123@localhost/watchlist'
     pass
-
 
 
 class ProdConfig(Config):
@@ -32,7 +32,8 @@ class DevConfig(Config):
 
     DEBUG = True
 
+
 config_options = {
-    'development':DevConfig,
-    'production':ProdConfig
+    'development': DevConfig,
+    'production': ProdConfig
 }
